@@ -9,12 +9,12 @@ else
     export XDG_SESSION_DESKTOP=i3
     export GDMSESSION=i3
     env > $HOME/tmp.txt
-  	python3 $HOME/.config/remind/remindme.py update
+  	python3 $HOME/Hack/remind/remindme.py update
   else
     if [ $# -lt 2 ]; then
     	echo "remindme [time] [instruction]"
     else
-      python3 $HOME/.config/remind/remindme.py $@
+      python3 $HOME/Hack/remind/remindme.py $@
     fi
   fi
 fi
